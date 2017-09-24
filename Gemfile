@@ -37,6 +37,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'popper_js', '~> 1.11.1'
 gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'rest-client'
 
 group :development, :test do
   gem 'capybara'
