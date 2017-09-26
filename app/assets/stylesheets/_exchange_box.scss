@@ -1,20 +1,42 @@
-.exchange_box{
-  .card{
+.exchange_box {
+  .card {
     border: 0;
-    .card-header{
+    .card-header {
       background-color: #878d99;
       border-radius: 0;
       color: white;
       font-weight: 700;
     }
-    .card-block{
+    .card-block {
       padding: 15px;
       padding-top: 10px;
-      .title{
+
+      .title {
         color: #878d99;
         font-weight: 700;
       }
-      .btn-exchange{
+
+      .cssload-speeding-wheel {
+        display: none;
+        position: absolute;
+        left: 88%;
+        z-index: 9;
+        margin-top: 6px;
+        border-color: #2196f3;
+        border-left-color: transparent;
+        border-right-color: transparent;
+
+        &.show {
+          display: block;
+        }
+      }
+
+      #result {
+        width: 100%;
+        border-color: #e9ecef;
+      }
+
+      .btn-exchange {
         background-color: #5bc0de;
         border-color: #5bc0de;
         border-radius: 0;
