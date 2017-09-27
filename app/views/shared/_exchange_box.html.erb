@@ -16,7 +16,14 @@
           </div>
           <div class="destination_currency">
             <div class="form-group">
-              <p class="title">Moeda Pretendida</p>
+              <div class="row">
+                <div class="col-8">
+                  <p class="title">Moeda Pretendida</p>
+                </div>
+                <div class="col toggle-currency text-right">
+                  <a id="btn-toggle" title="Alterne as moedas"><%= fa_icon "exchange" %></a>
+                </div>
+              </div>
               <%= select_tag "currency_destination", options_for_select(currency_select, "EUR"), class: "form-control", id: "currency_destination" %>
             </div>
             <div class="form-group cssload-container">

@@ -26,3 +26,11 @@ $(document).ready ->
         success: (data, text, jqXHR) ->
           $('#result').val(data.value)
           $("#loading-result").removeClass 'show'
+
+  $("#btn-toggle").on 'click', ->
+    currency = $("#currency").val().toString()
+    currency_destination = $("#currency_destination").val().toString()
+    $("#currency").val(currency_destination)
+    $("#currency_destination").val(currency)
+    send_async()
+

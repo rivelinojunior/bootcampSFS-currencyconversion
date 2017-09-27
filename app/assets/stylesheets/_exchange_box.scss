@@ -16,6 +16,20 @@
         font-weight: 700;
       }
 
+      .toggle-currency {
+        margin-top: -11px;
+        margin-right: 5px;
+        font-size: 2rem;
+        a {
+          color: #2196f3;
+
+          &:hover {
+            color: #878d99;
+          }
+        }
+
+      }
+
       .cssload-speeding-wheel {
         display: none;
         position: absolute;
