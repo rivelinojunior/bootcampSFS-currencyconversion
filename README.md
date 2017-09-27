@@ -24,4 +24,4 @@ docker-compose up
 ## Créditos
 Rivelino Junior - [@rivelinojunior](http://github.com/rivelinojunior)
 
-Onebitcode - [blog](http://onebitcode.com.br)
+Onebitcode - [blog](http://www.onebitcode.com)
