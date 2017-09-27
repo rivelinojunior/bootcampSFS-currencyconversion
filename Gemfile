@@ -41,6 +41,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
 gem 'rest-client'
+gem 'font-awesome-rails'
 
 group :development, :test do
   gem 'capybara'
