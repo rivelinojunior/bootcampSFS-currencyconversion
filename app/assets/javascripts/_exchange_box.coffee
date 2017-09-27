@@ -1,6 +1,15 @@
 $(document).ready ->
-  $('form').submit ->
-    if $('form').attr('action') == '/exchange'
+  $('#quantity').on 'change', ->
+    send_async()
+
+  $("#currency").on 'change', ->
+    send_async()
+
+  $("#currency_destination").on 'change', ->
+    send_async()
+
+  send_async = ->
+    if($("#currency").val() != '')
       $("#result").focus()
       $("#loading-result").addClass 'show'
       $.ajax '/exchange',
@@ -17,4 +26,3 @@ $(document).ready ->
         success: (data, text, jqXHR) ->
           $('#result').val(data.value)
           $("#loading-result").removeClass 'show'
-      return false;
