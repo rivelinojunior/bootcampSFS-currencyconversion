@@ -1,27 +1,53 @@
-# Sobre
+# About
 
-Essa aplicação faz a conversão entre duas moedas. 
-É possível informar um valor, escolher a moeda local e a destino e a aplicação mostra o resultado da conversão.
-Um exemplo da aplicação pode ser encontrado no link
-http://bootcampconversion.herokuapp.com/
+Application lets you see conversion value from one currency to another.
 
-## Tecnologias principais
+![Screenshot](public/screenshot.png)
+
+## Purpose
+
+This project has with purpose the learning new skills. The project was developed following the lessons of bootcamp in the [OneBitCode](onebitcode.com), with exception of some features that was developed for to conclude the challenges proposed. Follow the features developed for me (challenges):  
+
+* Dynamic consult (without necessity of the button to convert)
+* User possibility change the coins clicking in the button (alter the coins each other)
+
+## Prerequisites
+
+* Docker
+* Docker Compose
+
+## Getting started
+
+The steps below will help you in the building this project in the development and test environment:
+
+### 1. Clone the project
+``` 
+git clone git@github.com:rivelinojunior/bootcampSFS-currencyconversion.git
+```
+
+### 2. Building the project with docker/docker-compose
+```
+docker-compose build
+docker-compose run --rm website bundle exec rails db:create db:migrate
+docker-compose up
+```
+
+### 3. Access the application in your browser
+
+> localhost:3000
+
+## Running the test
+
+```
+docker-compose run --rm website bundle exec rspec
+```
+
+## Building with the technologies
 
 * Ruby on Rails 5
-* Ruby 2.3.1
-* Postgresql 9.5
 * Docker / Docker-compose
 * Rspec
 
-## Uso
-
-Basta ter o docker compose instalado na máquina, clonar o projeto e executar os seguintes comandos:
-```
-docker-compose build
-docker-compose up
-```
- 
-## Créditos
-Rivelino Junior - [@rivelinojunior](http://github.com/rivelinojunior)
-
-Onebitcode - [blog](http://www.onebitcode.com)
+## Credits
+* Rivelino Junior - [@rivelinojunior](http://github.com/rivelinojunior)
+* Onebitcode - [blog](http://www.onebitcode.com)
